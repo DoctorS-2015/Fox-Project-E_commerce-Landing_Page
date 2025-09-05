@@ -113,4 +113,4 @@ Servidor rodará em: [http://localhost:3000](http://localhost:3000)
 ## 👤 Autor
 
 Ramiriz Nóbrega  
-🔗 [LinkedIn](#) | 🔗 [Portfólio](#) | 📧 ramiriznobregall@gmail.com  
+🔗 [[LinkedIn](https://www.linkedin.com/in/ramiriz-n%C3%B3brega-aa4500a1/)](#) | 🔗 [Portfólio](#) | 📧 ramiriznobregall@gmail.com  
