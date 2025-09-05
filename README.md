@@ -10,8 +10,6 @@ O objetivo é demonstrar a aplicação de conceitos fundamentais e boas prática
 🔗 **[Demo Online do Projeto](#)**  
 *(Adicione o link quando publicar no GitHub Pages, Netlify ou Vercel)*  
 
-📸 **Preview do Projeto**  
-*(Sugestão: adicione aqui um GIF navegando pelo site)*
 
 ---
 
@@ -114,5 +112,5 @@ Servidor rodará em: [http://localhost:3000](http://localhost:3000)
 
 ## 👤 Autor
 
-**Marcelo Dias**  
-🔗 [LinkedIn](#) | 🔗 [Portfólio](#) | 📧 marcelo@email.com  
+Ramiriz Nóbrega  
+🔗 [LinkedIn](#) | 🔗 [Portfólio](#) | 📧 ramiriznobregall@gmail.com  
