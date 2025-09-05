@@ -7,8 +7,8 @@ Ele simula uma jornada de compra completa, desde a escolha do produto até a con
 
 O objetivo é demonstrar a aplicação de conceitos fundamentais e boas práticas do **desenvolvimento web moderno**, conciliando **tecnologia**, **design responsivo** e **usabilidade**.
 
-🔗 **[Demo Online do Projeto](#)**  
-*(Adicione o link quando publicar no GitHub Pages, Netlify ou Vercel)*  
+🔗 **[[Demo Online do Projeto]](https://fox-projectpage.vercel.app/)(#)**  
+  
 
 
 ---
