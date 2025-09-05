@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/images/logofoxtop.png" type="image/png" />
+  <title>Obrigado pela sua compra! | FOX U.S</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/obrigado.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="/assets/images/logofox.png" alt="Fox Style" class="logo" />
+    </div>
+
+    <div class="header-actions">
+      <a href="endereco.html" class="header-link">
+        <div class="location-container">
+          <img src="/assets/images/enderecoico.png" width="18" height="29" alt="Ícone Endereço" />
+          <div class="location-text"><span>Endereço</span></div>
+        </div>
+      </a>
+
+      <a href="contato.html" class="header-link">
+        <div class="account-container">
+          <img src="/assets/images/contatoico.png" width="18" height="29" alt="Ícone Contato" />
+          <div class="account-text"><span>Contato</span></div>
+        </div>
+      </a>
+
+      <a href="index.html" class="header-link">
+        <div class="cart-container">
+          <img src="/assets/images/homeico.png" width="18" height="29" alt="Ícone Home" />
+          <div class="cart-text"><span>Home</span></div>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="thank-you-main">
+    <div class="thank-you-card">
+      <i class="fas fa-check-circle icon-success"></i>
+      <h1>Obrigado pela sua compra!</h1>
+      <p>Seu pedido <strong id="order-id"></strong> foi recebido e está sendo processado.</p>
+
+      <div class="order-summary">
+        <h2>Resumo do Pedido</h2>
+        <div id="order-items"></div>
+        <div class="summary-totals">
+          <p>Subtotal: <span id="subtotal"></span></p>
+          <p>Frete: <span id="shipping"></span></p>
+          <p><strong>Total: <span id="total"></span></strong></p>
+        </div>
+      </div>
+
+      <a href="index.html" class="back-to-home">Voltar para a página inicial</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-section">
+      <h3>Atendimento ao Cliente</h3>
+      <ul>
+        <li><a href="contato.html">Perguntas Frequentes</a></li>
+        <li><a href="contato.html">Formas de Pagamento</a></li>
+        <li><a href="contato.html">Frete e Entrega</a></li>
+        <li><a href="contato.html">Trocas e Devoluções</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Institucional</h3>
+      <ul>
+        <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+        <li><a href="contato.html">Trabalhe Conosco</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Siga-nos</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com/usefoxbr" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/usefoxbr" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://instagram.com/usefoxbr" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com/usefoxbr" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Fox Style. Todos os direitos reservados.</p>
+      <p>R MOCHILAS LTDA</p>
+    </div>
+  </footer>
+
+  <!-- Script: renderização do pedido salvo -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const lastOrderString = localStorage.getItem('lastOrder');
+      if (!lastOrderString) {
+        document.querySelector('.order-summary').style.display = 'none';
+        return;
+      }
+
+      const data = JSON.parse(lastOrderString);
+      const brl = v => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+      document.getElementById('order-id').textContent = `#${data.orderId || 'N/A'}`;
+
+      const qty = data.product?.quantity || 1;
+      const unit = data.product?.price || 0;
+      const subtotal = unit * qty;
+      const shipping = data.shipping?.price || 0;
+      const total = subtotal + shipping;
+
+      document.getElementById('subtotal').textContent = brl(subtotal);
+      document.getElementById('shipping').textContent = brl(shipping);
+      document.getElementById('total').textContent = brl(total);
+
+      const itemsContainer = document.getElementById('order-items');
+      itemsContainer.innerHTML = `
+        <div class="item">
+          <span>${data.product?.name || ''} (x${qty})</span>
+          <span>${brl(subtotal)}</span>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>

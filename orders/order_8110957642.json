@@ -1,0 +1,26 @@
+{
+  "email": "davilevmagazine@gmail.com",
+  "phone": "(07) 56390-7055",
+  "fullName": "eLAINE aLVES dA SILVA",
+  "cpf": "628.581.993-96",
+  "cep": "22713-375",
+  "address": "Estrada Rodrigues Caldas",
+  "number": "120",
+  "complement": "",
+  "neighborhood": "Taquara",
+  "city": "Rio de Janeiro",
+  "state": "RJ",
+  "instructions": "",
+  "product": {
+    "name": "Kit Presente Dia dos Namorados Her Code (3 itens)",
+    "price": 184.95,
+    "image": "images/main_product_image.png",
+    "quantity": 1
+  },
+  "shipping": {
+    "price": 19.9,
+    "days": 2
+  },
+  "timestamp": "2025-06-07T22:03:31.095Z",
+  "orderId": "8110957642"
+}

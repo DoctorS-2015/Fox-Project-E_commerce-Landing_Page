@@ -1,0 +1,115 @@
+.thank-you-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    margin: 15px;
+}
+
+.thank-you-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.icon-success {
+    font-size: 50px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.thank-you-card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.thank-you-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.order-summary {
+    text-align: left;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.order-summary h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.order-summary .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.summary-totals {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.summary-totals p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.summary-totals strong {
+    font-size: 16px;
+}
+
+.back-to-home {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1A2B3C;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-to-home:hover {
+    background-color: #4A4A4A;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+  /* Estilo do círculo */
+  background-color: #25d366; /* sua cor principal */
+  border-radius: 50%;
+  width: 60px;  /* largura fixa do botão */
+  height: 60px; /* altura fixa do botão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-button img {
+  width: 32px;   /* ícone proporcional */
+  height: 32px;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  background-color: #4A4A4A; /* muda a cor no hover */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}

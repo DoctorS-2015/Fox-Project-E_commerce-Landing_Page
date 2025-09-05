@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/images/logofoxtop.png" type="image/png" />
+  <title>Revisão do Pedido | FOX U.S</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/review-styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="/assets/images/logofox.png" alt="Fox Style" class="logo" />
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="review-main">
+    <h1 class="review-title">Revisão do Pedido</h1>
+
+    <!-- Delivery data -->
+    <div class="review-section">
+      <h2>Dados de Entrega</h2>
+      <p><strong>Endereço:</strong> <span id="review-address"></span></p>
+      <p><strong>Número:</strong> <span id="review-number"></span></p>
+      <p><strong>Complemento:</strong> <span id="review-complement"></span></p>
+      <p><strong>Bairro:</strong> <span id="review-neighborhood"></span></p>
+      <p><strong>Cidade:</strong> <span id="review-city"></span></p>
+      <p><strong>Estado:</strong> <span id="review-state"></span></p>
+      <p><strong>CEP:</strong> <span id="review-cep"></span></p>
+      <p><strong>Instruções:</strong> <span id="review-instructions"></span></p>
+    </div>
+
+    <!-- Personal data -->
+    <div class="review-section">
+      <h2>Dados Pessoais</h2>
+      <p><strong>Nome Completo:</strong> <span id="review-full-name"></span></p>
+      <p><strong>E-mail:</strong> <span id="review-email"></span></p>
+      <p><strong>Telefone:</strong> <span id="review-phone"></span></p>
+      <p><strong>CPF:</strong> <span id="review-cpf"></span></p>
+    </div>
+
+    <!-- Order data -->
+    <div class="review-section">
+      <h2>Dados do Pedido</h2>
+      <div id="review-order-items"></div>
+      <p class="review-total"><strong>Subtotal:</strong> R$ <span id="review-subtotal"></span></p>
+      <p class="review-total"><strong>Frete:</strong> R$ <span id="review-shipping"></span></p>
+    </div>
+
+    <!-- Payment data -->
+    <div class="review-section">
+      <h2>Dados de Pagamento</h2>
+      <p class="review-total-final"><strong>Total a Pagar:</strong> R$ <span id="review-total-final"></span></p>
+      <button class="pix-button" id="finish-pix-payment">Finalizar pagamento via PIX</button>
+      <p class="alert-message">
+        *Obs.: Para a respectiva promoção e valor promocional só é aceito pagamento via PIX, não é aceito pagamento via cartão de crédito.
+      </p>
+    </div>
+
+    <button class="back-to-checkout" onclick="window.history.back();">Voltar para o Checkout</button>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-section">
+      <h3>Atendimento ao Cliente</h3>
+      <ul>
+        <li><a href="contato.html">Perguntas Frequentes</a></li>
+        <li><a href="contato.html">Formas de Pagamento</a></li>
+        <li><a href="contato.html">Frete e Entrega</a></li>
+        <li><a href="contato.html">Trocas e Devoluções</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Institucional</h3>
+      <ul>
+        <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+        <li><a href="contato.html">Trabalhe Conosco</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Siga-nos</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com/usefoxbr" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/usefoxbr" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://instagram.com/usefoxbr" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com/usefoxbr" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Fox Style. Todos os direitos reservados.</p>
+      <p>R MOCHILAS LTDA</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/review-script.js"></script>
+</body>
+</html>

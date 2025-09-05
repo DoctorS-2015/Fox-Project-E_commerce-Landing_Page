@@ -1,0 +1,238 @@
+/* Estilos específicos para a página de checkout */
+.checkout-main {
+    background-color: white;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.checkout-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.checkout-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.checkout-steps::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ccc;
+    z-index: 0;
+}
+
+.checkout-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.step-number {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+}
+
+.step-number.active {
+    background-color: #1A2B3C;
+}
+
+.step-title {
+    font-size: 12px;
+    text-align: center;
+}
+
+.checkout-form {
+    margin-bottom: 30px;
+}
+
+.form-title {
+    font-size: 18px;
+    margin: 20px 0 15px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.cep-input-group {
+    display: flex;
+}
+
+.cep-input-group input {
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+}
+
+.cep-input-group button {
+    background-color: #1A2B3C;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.no-cep-link {
+    color: #1A2B3C;
+    text-decoration: underline;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.checkout-summary {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.summary-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary-row.total {
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.checkout-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 15px 0; /* Adiciona padding para melhor aparência */
+    width: 100%; /* Garante que ocupe toda a largura */
+}
+
+.continue-button {
+    padding: 10px 20px;
+    background-color: #1A2B3C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsividade para dispositivos mobile */
+@media (max-width: 768px) {
+    .checkout-steps {
+        flex-direction: row;
+    }
+    
+    .step-title {
+        font-size: 10px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .checkout-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .back-button,
+    .continue-button {
+        width: 100%;
+    }
+}
+
+/* Estilos específicos para telas muito pequenas */
+@media (max-width: 375px) {
+    .checkout-title {
+        font-size: 20px;
+    }
+    
+    .step-number {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+    
+    .step-title {
+        font-size: 9px;
+    }
+}
+

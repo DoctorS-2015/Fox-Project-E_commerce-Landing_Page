@@ -1,0 +1,442 @@
+/* Estilos específicos para a página de revisão do pedido */
+
+.review-main {
+    background-color: white;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.review-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.review-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.review-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #1A2B3C;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.review-section p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.review-section strong {
+    font-weight: bold;
+    color: #555;
+}
+
+.review-order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.review-order-item:last-child {
+    border-bottom: none;
+}
+
+.review-order-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.review-order-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-order-details {
+    flex: 1;
+}
+
+.review-order-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.review-order-price {
+    color: #1A2B3C;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.review-order-quantity {
+    font-size: 12px;
+    color: #666;
+}
+
+.review-total {
+    text-align: right;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.review-total-final {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A2B3C;
+    margin-bottom: 20px;
+}
+
+.pix-button {
+    background-color: #1A2B3C;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.pix-button:hover {
+    background-color: #4A4A4A;
+}
+
+.alert-message {
+    color: #e74c3c;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fdf2f2;
+    border-radius: 5px;
+    border-left: 4px solid #e74c3c;
+}
+
+.back-to-checkout {
+    background-color: #f0f0f0;
+    color: #333;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    margin-top: 20px;
+}
+
+.back-to-checkout:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para o modal de confirmação */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: translateY(-20px);
+    transition: transform 0.3s;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #1A2B3C;
+}
+
+.modal-message {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.modal-button-primary {
+    background-color: #1A2B3C;
+    color: white;
+}
+
+.modal-button-primary:hover {
+    background-color: #4A4A4A;
+}
+
+.modal-button-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.modal-button-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para o modal de pagamento PIX */
+.pix-payment-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.pix-payment-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pix-payment-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    transition: transform 0.3s;
+}
+
+.pix-payment-modal.active .pix-payment-content {
+    transform: translateY(0);
+}
+
+.pix-payment-title {
+    color: #1A2B3C;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.pix-payment-subtitle {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.pix-qrcode-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pix-qrcode {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.pix-code-container {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.pix-code {
+    font-family: monospace;
+    word-break: break-all;
+    margin: 0;
+    padding-right: 30px;
+    font-size: 14px;
+}
+
+.copy-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #1A2B3C;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.copy-button:hover {
+    color: #1A2B3C;
+}
+
+.pix-payment-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.pix-payment-button {
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.pix-payment-button-primary {
+    background-color: #1A2B3C;
+    color: white;
+    border: none;
+}
+
+.pix-payment-button-primary:hover {
+    background-color: #1A2B3C;
+}
+
+.copy-success {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4A4A4A; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 15px 0; /* Adiciona padding para melhor aparência */
+    width: 100%; /* Garante que ocupe toda a largura */
+}
+
+.copy-success.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .review-main {
+        padding: 15px 10px;
+    }
+    
+    .review-title {
+        font-size: 20px;
+    }
+    
+    .review-section {
+        padding: 12px;
+    }
+    
+    .review-section h2 {
+        font-size: 16px;
+    }
+    
+    .review-total-final {
+        font-size: 18px;
+    }
+    
+    .pix-button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+/* Estilos para telas muito pequenas */
+@media (max-width: 375px) {
+    .review-section {
+        padding: 10px;
+    }
+    
+    .review-order-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .review-order-title {
+        font-size: 12px;
+    }
+    
+    .review-total-final {
+        font-size: 16px;
+    }
+}
+
