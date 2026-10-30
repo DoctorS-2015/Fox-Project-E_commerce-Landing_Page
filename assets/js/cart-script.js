@@ -131,7 +131,9 @@ document.addEventListener('DOMContentLoaded', function() {
      * ============================
      */
     function updateCartTotals() {
-        const quantity  = parseInt(document.querySelector('.quantity-input').value) || 1;
+        const quantityInput = document.querySelector('.quantity-input');
+        if (!quantityInput) return;
+        const quantity  = parseInt(quantityInput.value, 10) || 1;
         const unitPrice = 99.54; // Valor unitário fixo do produto
         const subtotal  = quantity * unitPrice;
         const shipping  = 19.90; // Valor fixo do frete (pode ser dinâmico futuramente)

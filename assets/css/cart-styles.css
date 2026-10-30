@@ -373,3 +373,9 @@
     }
 }
 
+
+/* Refinamento do carrinho */
+.cart-main{max-width:900px;padding:clamp(1.25rem,4vw,2.5rem);margin:1.5rem auto;border:1px solid var(--fox-line);border-radius:var(--fox-radius);box-shadow:var(--fox-shadow)}
+.cart-title{font-size:clamp(1.5rem,4vw,2rem);color:var(--fox-brand)}
+.cart-section-title{color:var(--fox-brand);font-size:1.1rem}.cart-item{gap:1rem;padding:1.2rem 0}.item-image{width:104px;height:104px;padding:.4rem;border:1px solid var(--fox-line);border-radius:10px;background:#fff}.item-title{font-size:1rem;line-height:1.35}.item-code,.gift-note{color:var(--fox-muted)}.quantity-btn{border:1px solid var(--fox-line);background:#fff;color:var(--fox-brand);font-weight:800}.quantity-input{border-color:var(--fox-line);border-radius:6px}.remove-item{color:var(--fox-danger)}.cart-summary{padding:1.25rem;border:1px solid var(--fox-line);border-radius:10px;background:var(--fox-subtle)}.summary-row.total{border-top-color:var(--fox-line);color:var(--fox-brand)}.gift-section,.shipping-calculator-cart{border-color:var(--fox-line);border-radius:10px}.gift-badge{border-radius:999px;background:#e8f7ee;color:var(--fox-success)}.gift-free{color:var(--fox-success)}.cart-actions{gap:.75rem}.continue-shopping{border-color:var(--fox-brand);color:var(--fox-brand);border-radius:8px}.checkout-button{border-radius:8px}
+@media(max-width:520px){.cart-item{align-items:flex-start}.item-image{width:78px;height:78px}.remove-item{position:absolute;right:0;bottom:1rem}}

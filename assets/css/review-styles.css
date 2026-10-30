@@ -440,3 +440,10 @@
     }
 }
 
+
+/* Refinamento de revisão */
+.review-main{max-width:900px;padding:clamp(1.25rem,4vw,2.5rem);margin:1.5rem auto;border:1px solid var(--fox-line);border-radius:var(--fox-radius);box-shadow:var(--fox-shadow)}.review-title{color:var(--fox-brand);font-size:clamp(1.5rem,4vw,2rem);border-color:var(--fox-line)}.review-section{border:1px solid var(--fox-line);background:#fff;box-shadow:0 4px 14px rgb(23 33 43 / 6%)}.review-section h2,.modal-title,.pix-payment-title{color:var(--fox-brand)}.review-section strong{color:var(--fox-ink)}.review-order-image{border:1px solid var(--fox-line);border-radius:8px}.review-order-price,.review-total-final{color:var(--fox-brand)}.pix-button,.pix-payment-button-primary,.modal-button-primary{background:var(--fox-brand)}.modal-overlay,.pix-payment-modal{background:rgb(13 36 54 / 68%)}.modal-content,.pix-payment-content{border:1px solid var(--fox-line);border-radius:16px}.copy-button{color:var(--fox-brand)}
+@media(max-width:520px){.review-main{margin:1rem}.pix-payment-content{padding:1.2rem}}
+
+/* Preserva o cabeçalho global nas páginas de fluxo */
+.header{justify-content:space-between;width:100%;padding:1rem clamp(1rem,4vw,3rem)}

@@ -36,9 +36,10 @@
       </a>
     </div>
   </header>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
 
   <!-- Main content -->
-  <main class="cart-main">
+  <main id="main-content" class="cart-main">
     <h1 class="cart-title">Seu Carrinho (1 Produto + 1 Brinde)</h1>
 
     <!-- Shipping calculator -->
@@ -49,7 +50,7 @@
         <button id="calculate-shipping-cart">OK</button>
         <a href="#" class="no-cep-link">Não sei meu CEP</a>
       </div>
-      <div class="shipping-result-cart" id="shipping-result-cart"></div>
+      <div class="shipping-result-cart" id="shipping-result-cart" aria-live="polite"></div>
     </div>
 
     <h2 class="cart-section-title">Produtos (1)</h2>

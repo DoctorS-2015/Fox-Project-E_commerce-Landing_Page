@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         carouselIndicators.forEach(indicator => indicator.classList.remove('active'));
         thumbnailItems.forEach(item => item.classList.remove('active'));
 
+        if (!carouselSlides.length) return;
         carouselSlides[index].classList.add('active');
         if (index < carouselIndicators.length) carouselIndicators[index].classList.add('active');
         if (index < thumbnailItems.length) thumbnailItems[index].classList.add('active');
@@ -162,6 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let isDragging = false;
 
     // Toque (mobile)
+    if (!carousel) return;
     carousel.addEventListener('touchstart', e => (startX = e.touches[0].clientX), false);
     carousel.addEventListener('touchend', e => handleSwipe(e.changedTouches[0].clientX - startX), false);
 

@@ -26,6 +26,7 @@ if (!fs.existsSync(ORDERS_DIR)) {
 // ------------------------------------------------------
 app.use(cors());            // Permite requisições de diferentes origens (frontend ↔ backend)
 app.use(express.json());    // Habilita parsing de JSON no corpo das requisições
+app.use(express.static(path.join(__dirname, '..', '..'))); // Serve o front-end estático
 
 // ------------------------------------------------------
 // Rota: Criar um novo pedido

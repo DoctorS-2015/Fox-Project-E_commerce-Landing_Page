@@ -236,3 +236,10 @@
     }
 }
 
+
+/* Refinamento do checkout */
+.checkout-main{max-width:900px;padding:clamp(1.25rem,4vw,2.5rem);margin:1.5rem auto;border:1px solid var(--fox-line);border-radius:var(--fox-radius);box-shadow:var(--fox-shadow)}.checkout-title{color:var(--fox-brand);font-size:clamp(1.5rem,4vw,2rem)}.checkout-steps::before{background:var(--fox-line)}.step-number{background:#cbd4da}.step-number.active{background:var(--fox-brand);box-shadow:0 0 0 5px rgb(23 47 67 / 10%)}.step-title{color:var(--fox-muted);font-weight:650}.form-title{color:var(--fox-brand);border-color:var(--fox-line)}.form-group label{color:var(--fox-ink)}.cep-input-group button,.continue-button{background:var(--fox-brand)}.checkout-summary{border:1px solid var(--fox-line);background:var(--fox-subtle)}.back-button{border-color:var(--fox-line);border-radius:8px;color:var(--fox-muted)}
+@media(max-width:520px){.checkout-main{margin:1rem}.checkout-steps{gap:.25rem}.step-title{font-size:.68rem}}
+
+/* Preserva o cabeçalho global nas páginas de fluxo */
+.header{justify-content:space-between;width:100%;padding:1rem clamp(1rem,4vw,3rem)}

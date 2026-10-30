@@ -113,3 +113,6 @@
   background-color: #4A4A4A; /* muda a cor no hover */
   box-shadow: 0 6px 14px rgba(0,0,0,0.4);
 }
+
+/* Refinamento de confirmação */
+.thank-you-main{min-height:420px;padding:clamp(1.25rem,4vw,2.5rem)}.thank-you-card{max-width:680px;padding:clamp(1.5rem,5vw,3rem);border:1px solid var(--fox-line);border-radius:16px;box-shadow:var(--fox-shadow)}.icon-success{color:var(--fox-success)}.thank-you-card h1{color:var(--fox-brand);font-size:clamp(1.5rem,4vw,2rem)}.order-summary{border-color:var(--fox-line);background:var(--fox-subtle)}.back-to-home{border-radius:8px;background:var(--fox-brand)}

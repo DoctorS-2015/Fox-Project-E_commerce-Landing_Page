@@ -82,3 +82,6 @@
   background-color: #4A4A4A; /* muda a cor no hover */
   box-shadow: 0 6px 14px rgba(0,0,0,0.4);
 }
+
+/* Refinamento institucional */
+.policy-main{max-width:900px;padding:clamp(1.25rem,4vw,2.5rem);border:1px solid var(--fox-line);border-radius:var(--fox-radius);box-shadow:var(--fox-shadow)}.policy-main h1{color:var(--fox-brand);font-size:clamp(1.5rem,4vw,2rem)}.policy-main h2{color:var(--fox-brand);font-size:1.15rem}.policy-main p{color:var(--fox-muted);font-size:.95rem}

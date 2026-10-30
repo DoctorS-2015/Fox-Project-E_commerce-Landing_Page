@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
      * EVENTO DE SUBMISSÃO DO FORMULÁRIO
      * ============================
      */
+    if (!form) return;
     form.addEventListener('submit', function(e) {
         e.preventDefault(); // Impede envio padrão
 

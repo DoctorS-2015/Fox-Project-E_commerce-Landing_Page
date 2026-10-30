@@ -122,3 +122,6 @@
         flex: 1;
     }
 }
+
+/* Refinamento de endereço */
+.address-main{max-width:1000px;padding:clamp(1.25rem,4vw,2.5rem);margin:1.5rem auto;border:1px solid var(--fox-line);border-radius:var(--fox-radius);box-shadow:var(--fox-shadow)}.address-title{color:var(--fox-brand);font-size:clamp(1.5rem,4vw,2rem)}.address-card{gap:1.5rem}.map-container{border-color:var(--fox-line);border-radius:12px;box-shadow:var(--fox-shadow)}.info-container h2,.hours-title{color:var(--fox-brand)}.hours-list li{color:var(--fox-muted)}
