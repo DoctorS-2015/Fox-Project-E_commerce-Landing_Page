@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    /**
-     * ============================
-     * CONTROLES DE QUANTIDADE
-     * ============================
-     */
+
     const decreaseButtons = document.querySelectorAll('.quantity-btn.decrease');
     const increaseButtons = document.querySelectorAll('.quantity-btn.increase');
     const quantityInputs  = document.querySelectorAll('.quantity-input');
@@ -43,29 +39,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    /**
-     * ============================
-     * REMOVER ITEM
-     * ============================
-     */
+    
     const removeButtons = document.querySelectorAll('.remove-item');
 
     removeButtons.forEach(button => {
         button.addEventListener('click', function() {
             const confirmRemove = confirm('Tem certeza que deseja remover este item da sacola?');
             if (confirmRemove) {
-                // Lógica de remoção pode ser expandida futuramente.
-                // Atualmente redireciona o usuário para a página inicial.
+                
                 window.location.href = 'index.html';
             }
         });
     });
 
-    /**
-     * ============================
-     * CÁLCULO DE FRETE
-     * ============================
-     */
+    
     const cepInputCart       = document.getElementById('cep-input-cart');
     const calculateButtonCart = document.getElementById('calculate-shipping-cart');
     const shippingResultCart  = document.getElementById('shipping-result-cart');
@@ -84,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     `;
                     shippingResultCart.classList.add('active');
-                    updateCartTotals(); // Atualiza resumo com o valor do frete
+                    updateCartTotals(); 
                 }
             } else {
                 if (shippingResultCart) {
@@ -95,11 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    /**
-     * ============================
-     * LINK "NÃO SEI MEU CEP"
-     * ============================
-     */
+    
     const noCepLink = document.querySelector('.no-cep-link');
 
     if (noCepLink) {
@@ -112,11 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    /**
-     * ============================
-     * FINALIZAR COMPRA
-     * ============================
-     */
+    
     const checkoutButton = document.getElementById('checkout-button');
 
     if (checkoutButton) {
@@ -125,11 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    /**
-     * ============================
-     * ATUALIZAÇÃO DE TOTAIS
-     * ============================
-     */
+    
     function updateCartTotals() {
         const quantityInput = document.querySelector('.quantity-input');
         if (!quantityInput) return;

@@ -425,7 +425,9 @@ button {
 
 .shipping-input {
     display: flex;
+    gap: 12px;
     margin-bottom: 10px;
+    
 }
 
 .shipping-input input {
@@ -439,7 +441,7 @@ button {
     background-color: #1A2B3C;
     color: white;
     padding: 10px 15px;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 5px 5px ;
 }
 
 .shipping-result {
@@ -550,7 +552,7 @@ button {
 .product-reviews {
     border-top: 1px solid #eee;
     padding-top: 20px;
-    
+    margin-bottom: 30px;
 }
 
 .product-reviews h2 {
@@ -620,7 +622,6 @@ button {
 
 .review-list {
     margin-bottom: 20px;
-    max-width: 800px;
     
 }
 
@@ -650,12 +651,14 @@ button {
 
 .load-more-reviews {
     width: 100%;
-    padding: 10px;
+    padding: 10px 30px;
+    margin: 0 auto;
     background-color: #f0f0f0;
     border-radius: 5px;
     font-size: 14px;
     color: #333;
-    max-width: 800px;
+    width: fit-content;
+    
 }
 
 /* Rodapé */
